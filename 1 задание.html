@@ -1,0 +1,26 @@
+<head>
+<title>Часы в поле формы</title>
+</head>
+<script language="JavaScript">
+<!--
+function fulltime () {
+var time=new Date();
+document.clock.full.value=time.toLocaleString();
+setTimeout('fulltime()',500)
+}
+-->
+</script>
+<body>
+<form name="clock"><input size="28" name="full"></form>
+<script language="JavaScript">
+fulltime ();
+var Today = new Date();
+var DayOfTheWeek = Today.getDay();
+var DayOfTheWeeks = ['воскресенье', 'понедельник', 'вторник',
+'среда', 'четерг', 'пятница', 'суббота'];
+document.write('<H1>Сегодня – ', DayOfTheWeeks[DayOfTheWeek],
+'</H1>');
+
+</script>
+</body>
+</html>
